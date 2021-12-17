@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/webdev?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 20000927
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  mail:
+    host: smtp.qq.com
+    username: 1324603194@qq.com
+    password: tesoarlunvsrgeia
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+mybatis:
+  type-aliases-package: com.example.demo.bean
